@@ -16,33 +16,36 @@ Step 2: SSH into the machine
 
 
 Step 3: Make sure everything is up to date
+
 	sudo apt-get update
 	sudo apt-get upgrade
 
 
 Step 4: Install dependencies
+
 	sudo apt-get install python
 	sudo apt-get install python-pip
 	alias python=python3
-Check version and make sure it is at least 3.5
-	python --version 
 
+Check version and make sure it is at least 3.5
+
+	python --version 
 	sudo pip install awscli
 	aws configure
 
 
 Step 5: Using the access key
 
--Insert access key
+-Insert access key:
 	*************
 
--Insert secret access key
+-Insert secret access key:
 	*************
 
--Insert region
+-Insert region:
 	eu-west-1
 
--Insert output format
+-Insert output format:
 	json
 
 	
