@@ -6,18 +6,21 @@ We can have different storage classes depending on the need of the business. Cho
 
 The following figure shows how S3 works:
 
-![alt text]()
+![alt text](https://github.com/ioanan11/deloitte_sre_aws_s3/blob/main/Screenshot%202021-09-07%20165235.png)
 
 Step 1: Launch EC2 instance on AWS 
 Note: has to be connected to the internet and don't forget to allow port 22
  
+
 Step 2: SSH into the machine
+
 
 Step 3: Make sure everything is up to date
 	sudo apt-get update
 	sudo apt-get upgrade
 
-Step 3: Install dependencies
+
+Step 4: Install dependencies
 	sudo apt-get install python
 	sudo apt-get install python-pip
 	alias python=python3
@@ -27,21 +30,26 @@ Check version and make sure it is at least 3.5
 	sudo pip install awscli
 	aws configure
 
-Step 4: Using the access key
+
+Step 5: Using the access key
 
 -Insert access key
 	*************
+
 -Insert secret access key
 	*************
+
 -Insert region
 	eu-west-1
+
 -Insert output format
 	json
+
 	
-Step 5: Use command
+Step 6: Use command
 	aws s3 ls
 
-Step 6: Creating a bucket
+Step 7: Creating a bucket
 
 	aws s3 mb s3://sreioana
 
